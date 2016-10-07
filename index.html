@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html ng-app="myApp">
+<head>
+	<title>Node_Routing</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+	<script src="script/script.js"></script>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+<div>
+	<h1>My Routing App</h1>
+</div>
+<section class="brands">
+	<div ui-view>
+	<ul>
+ 		<li><a  ui-sref="description({brand:'Apple'})"><img src="assets/apple.jpg">Apple</a></li>
+ 		<li><a  ui-sref="description({brand:'Asus'})"><img src="assets/asus.png">Asus</a></li>
+ 		<li><a  ui-sref="description({brand:'Huawei'})"><img src="assets/huawei.jpg">Huawei</a></li>
+ 		<li><a  ui-sref="description({brand:'Lenovo'})"><img src="assets/lenovo.png">Lenovo</a></li>
+ 		<li><a  ui-sref="description({brand:'Microsoft'})"><img src="assets/microsoft.png">Microsoft</a></li>
+ 		<li><a  ui-sref="description({brand:'Moto'})"><img src="assets/moto.png">Motorola</a></li>
+ 		<li><a  ui-sref="description({brand:'Nokia'})"><img src="assets/nokia.png">Nokia</a></li>
+ 		<li><a  ui-sref="description({brand:'Samsung'})"><img src="assets/samsung.jpg">Samsung</a></li>
+ 		<li><a  ui-sref="description({brand:'Oppo'})"><img src="assets/oppo.png">Oppo</a></li>
+ 		<li><a  ui-sref="description({brand:'Sony'})"><img src="assets/sony.jpg">Sony</a></li>
+	</ul>
+	</div>
+</section>
+</body>
+</html>
